@@ -14,15 +14,7 @@ const SearchResult = ({ query }) => {
 
 	useEffect(() => {
 		async function fetchData() {
-			const request = await axios.post(url, query
-				// 	{
-				// 	keyword: ,
-				// 	genre: ,
-				// 	media_type:,
-				// 	language: ,
-				// 	year: ,
-				// }
-			).then(response => setMovies(response.data.results))
+			const request = await axios.post(url, query).then(response => setMovies(response.data.results))
 			return request
 		}
 

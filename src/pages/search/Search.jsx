@@ -22,13 +22,6 @@ const Search = () => {
 		}
 		fetchGenreList();
 	}, ['/genrelist'])
-	// const handleInputChange = (e) => {
-	// 	console.log(e.target.name)
-	// 	const target = e.target;
-	// 	const value = target.type === "checkbox" ? target.checked : target.value;
-	// 	const name = target.name;
-	// 	setSearchInput({ ...searchInput, keyword: value })
-	// }
 
 	const handleSearch = (event) => {
 		setQuery(searchInput)
@@ -115,9 +108,9 @@ const Search = () => {
 
 									>
 										<option>Select Language</option>
-										<option>en-us</option>
-										<option>jp</option>
-										<option>kr</option>
+										<option>EN</option>
+										<option>JP</option>
+										<option>KR</option>
 									</select>
 								</div>
 								<div>
